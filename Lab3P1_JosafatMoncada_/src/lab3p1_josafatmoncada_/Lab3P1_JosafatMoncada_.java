@@ -44,21 +44,33 @@ public class Lab3P1_JosafatMoncada_ {
 
                     
                     
-                case 2: 
+                   case 2: 
                     break;
                     
                     
-                case 3:
-                Scanner scanner = new Scanner(System.in);
-        System.out.print("Ingrese el tamaño del cuadrado: ");
-        int size = scanner.nextInt();
-        if (size <= 0) {
-            System.out.println("No se aceptan negativos favor poner los numeros positivos.");
-        } else {
-            
-            for (int i = 0; i < size; i++) {
-                for (int j = 0; j < size; j++) {
-                   
+                    case 3:
+                    System.out.println(" cuadrado vacio");
+                    System.out.println(" ingrese la fila");
+                    int fila;
+                    fila =entrada.nextInt();
+                    System.out.println("ingrese numero de columna");
+                    int columna;
+                    columna =entrada.nextInt();
+                    for ( int i=1; i<=fila;i++){
+                        for (int j=1; j<=columna;j++){
+                        if (i==1 || i==fila || j==1 || j==columna){
+                            System.out.print("*");
+                        }else{
+                            System.out.print(" ");
+                               Scanner scanner = new Scanner(System.in);
+                            System.out.print("Ingrese el tamaño del cuadrado: ");
+                            int size = scanner.nextInt();
+                            if (size <= 0) {
+                                System.out.println("No se aceptan negativos favor poner los numeros positivos.");
+                            } else {                             
+                    for (int i = 0; i < size; i++){
+                     for (int j = 0; j < size; j++){
+                
                     if (i == size / 2 || j == size / 2) {
                         System.out.print("| ");
                     } else if (i < size / 2 && j < size / 2) {
@@ -75,6 +87,11 @@ public class Lab3P1_JosafatMoncada_ {
                 System.out.println();
             }
         }
+                            
+                        }
+                    }
+                    
+         
     }
 }
                 
@@ -84,8 +101,8 @@ public class Lab3P1_JosafatMoncada_ {
            
                 
             }
-
     }
+}   
     
 
 
